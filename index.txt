@@ -1,0 +1,28 @@
+ALGORITHM sentence
+VAR
+sent : string;
+sl,Vnb,Wnb,i,j,k :integer;
+
+BEGIN
+READ(sent);
+WHILE (sent[i])<>".") DO
+sl:=sl+1;
+i:=i+1
+END WHILE
+
+WHILE (j<sl) DO
+IF (sent[i]=" ") THEN
+Vnb:=Vnb+1;
+j:=j+1;
+END if 
+END WHILE
+
+WHILE (k<sl) DO
+IF (sent[k]=a or sent[k]=e or sent[k]=u or sent[k]=i or sent[k]=o ) THEN
+Wnb:= Wnb +1;
+k:=k+1;
+END IF
+END WHILE
+
+WRITE (sl,Vnb,Wnb);
+
